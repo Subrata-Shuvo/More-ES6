@@ -5,8 +5,7 @@
 
 const myObject = { x: 2, y: 50, z: 200, a: 200, b: 68 };
 const { x, b } = myObject;
-console.log("myObject.p", myObject ? .p ? .q);
-
+console.log('myObject.p', myObject?.p?.q);
 // destructuring array
 const [p, q] = [45, 54];
 // console.log(p, q);
@@ -14,7 +13,7 @@ const [p, q] = [45, 54];
 const [best, worst] = ['Subrata', 'Shuvo']
 // console.log(best, worst);
 
-const { sky, color, money } = { sky: 'blue', soil: 'mati', color: 'red' }
+const { sky, color, money } = { sky: 'blue', soil: 'mati', color: 'red' };
 
 
 
