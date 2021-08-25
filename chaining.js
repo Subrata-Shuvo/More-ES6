@@ -1,11 +1,15 @@
 // declare variable based on the name of an object property
-
-
 // getting the object property as variable is called destructuring or chaining 
 
+// if we ever get a error msg like = Can not read property somthing of undefined --  we will use optional chaining then.
+
+// optional chaining is if you are getting the value of the defined console item then perform the code otherwise stop there
 const myObject = { x: 2, y: 50, z: 200, a: 200, b: 68 };
 const { x, b } = myObject;
-console.log('myObject.p', myObject?.p?.q);
+// console.log('myObject.p', myObject?.p?.q);
+
+
+
 // destructuring array
 const [p, q] = [45, 54];
 // console.log(p, q);
@@ -34,4 +38,5 @@ const office = {
     },
 };
 
-console.log(office.web.tech.third);
+// console.log(office.web.tech.third);
+console.log(office?.backend?.tech.third);
